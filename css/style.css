@@ -58,10 +58,65 @@ span + span {
 }
 
 .contacts {
+  margin-top: 95px;
+  margin-left: 120px;
+  display: flex;
+  font-size: 16px;
+}
+.contacts .number {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #424242;
+  line-height: 23px;
+  font-weight: 700;
+}
+.contacts .map {
+  text-decoration: none;
+  color: #424242;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.social {
+  position: relative;
   display: flex;
 }
 
 .icon {
   width: 20px;
   height: 20px;
+  margin-right: 5px;
+}
+
+.twitter, .facebook, .vkontakte, .instagram {
+  top: 40px;
+  z-index: 4;
+  fill: #c0c0c0;
+  padding: 5px;
+  border: 2px solid #c0c0c0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.twitter:hover, .facebook:hover, .vkontakte:hover, .instagram:hover {
+  fill: #fff;
+  background: blue;
+  border: none;
+  box-shadow: 0 0 5px 2px;
+}
+
+.twitter:hover {
+  background: #18c2ed;
+  box-shadow: 0 0 5px 2px #18c2ed;
+}
+
+.vkontakte:hover {
+  background: #12a7cc;
+  box-shadow: 0 0 5px 2px #12a7cc;
+}
+
+.instagram:hover {
+  background: #e11588;
+  box-shadow: 0 0 5px 2px #e11588;
 }

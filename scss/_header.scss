@@ -30,6 +30,28 @@ span + span {
     font-weight: 700;
 }
 .contacts {
+    margin-top: 95px;
+    margin-left: 120px;
     display: flex;
-
+    font-size: 16px;
+    .number{
+        margin-right: 30px;
+        text-decoration: none;
+        color: $black;
+        line-height: 23px;
+        font-weight: 700;
+    }
+    .map {
+        text-decoration: none;
+        color: $black;
+        line-height: 23px;
+        font-weight: 700;
+    }
 }
+.social {
+    position: relative;
+    display: flex;
+}
+
+
+
