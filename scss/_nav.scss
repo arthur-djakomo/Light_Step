@@ -1,0 +1,60 @@
+.nav{
+    margin-top: 35px;
+    display: flex;
+
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+        background: $grey;
+        text-transform: uppercase;
+        border: none;
+        text-align: center;
+        padding: 0;
+        &:hover{
+        background: $orange;
+        }
+         .menu__items{
+             color: $black;
+             padding: 8.5px 57px;
+             display: inline-block;
+             text-decoration: none;
+             font-size: 14px;
+             line-height: 23px;
+             font-weight: 300;
+             &:hover{
+             color: #fff;
+           }
+        }
+    }
+}
+
+
+
+
+        .search__line{
+            height: 40px;
+            width: 240px;
+            background-color: white;
+            border: 1px $grey solid;
+            border-radius: 2px;
+            color: $black;
+            padding: 0;
+            text-align: center;
+        }
+        .search__photo{
+            background: $orange;
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+            padding: 0;
+            transform: translate(-3px, 3px);
+
+        }
+

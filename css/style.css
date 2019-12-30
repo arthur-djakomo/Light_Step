@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+  overflow: auto;
 }
 
 .container {
@@ -59,7 +60,7 @@ span + span {
 
 .contacts {
   margin-top: 95px;
-  margin-left: 120px;
+  margin-left: 80px;
   display: flex;
   font-size: 16px;
 }
@@ -78,8 +79,57 @@ span + span {
 }
 
 .social {
-  position: relative;
   display: flex;
+  margin: 20px 0 0 60px;
+  display: inline-block;
+  position: relative;
+}
+.social .registered {
+  margin-left: 40px;
+}
+.social .social__items {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background: white;
+}
+
+.social:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 280px;
+  background: #c0c0c0;
+}
+
+.basket__block {
+  margin: 25px 0 0 60px;
+}
+.basket__block .basket__line {
+  height: 40px;
+  width: 240px;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 3px;
+  color: #424242;
+  padding: 0;
+  text-align: center;
+}
+.basket__block .photo__basket {
+  background: #ff7e45;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0;
+  transform: translate(-3px, 3px);
 }
 
 .icon {
@@ -88,20 +138,16 @@ span + span {
   margin-right: 5px;
 }
 
-.twitter, .facebook, .vkontakte, .instagram {
-  top: 40px;
-  z-index: 4;
+.twitter, .facebook, .vkontakte, .instagram, .key, .lock {
   fill: #c0c0c0;
   padding: 5px;
-  border: 2px solid #c0c0c0;
   width: 30px;
   height: 30px;
+  border: 2px solid #c0c0c0;
   border-radius: 50%;
-  margin-right: 10px;
 }
-.twitter:hover, .facebook:hover, .vkontakte:hover, .instagram:hover {
+.twitter:hover, .facebook:hover, .vkontakte:hover, .instagram:hover, .key:hover, .lock:hover {
   fill: #fff;
-  background: blue;
   border: none;
   box-shadow: 0 0 5px 2px;
 }
@@ -109,6 +155,10 @@ span + span {
 .twitter:hover {
   background: #18c2ed;
   box-shadow: 0 0 5px 2px #18c2ed;
+}
+
+.facebook:hover {
+  background: blue;
 }
 
 .vkontakte:hover {
@@ -119,4 +169,74 @@ span + span {
 .instagram:hover {
   background: #e11588;
   box-shadow: 0 0 5px 2px #e11588;
+}
+
+.key:hover {
+  background: blue;
+}
+
+.lock:hover {
+  background: blue;
+}
+
+.nav {
+  margin-top: 35px;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  background: #e2e2e2;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+.menu li:hover {
+  background: #ff7e45;
+}
+.menu li .menu__items {
+  color: #424242;
+  padding: 8.5px 57px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+}
+.menu li .menu__items:hover {
+  color: #fff;
+}
+
+.search__line {
+  height: 40px;
+  width: 240px;
+  background-color: white;
+  border: 1px #e2e2e2 solid;
+  border-radius: 2px;
+  color: #424242;
+  padding: 0;
+  text-align: center;
+}
+
+.search__photo {
+  background: #ff7e45;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0;
+  transform: translate(-3px, 3px);
+}
+
+.slider__photo img {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
 }

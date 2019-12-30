@@ -31,7 +31,7 @@ span + span {
 }
 .contacts {
     margin-top: 95px;
-    margin-left: 120px;
+    margin-left: 80px;
     display: flex;
     font-size: 16px;
     .number{
@@ -49,9 +49,63 @@ span + span {
     }
 }
 .social {
-    position: relative;
     display: flex;
+    margin: 20px 0 0 60px;
+    display: inline-block;
+    position: relative;
+    .registered{
+        margin-left: 40px;
+    }
+    .social__items {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background: white;
+    }
 }
+.social:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -1px;
+    height: 2px;
+    width: 280px;
+    background: $social-color;
+
+}
+.basket__block{
+    margin: 25px 0 0 60px;
+
+
+        .basket__line{
+            height: 40px;
+            width: 240px;
+            background-color: $grey;
+            border: none;
+            border-radius: 3px;
+            color: $black;
+            padding: 0;
+            text-align: center;
+        }
+        .photo__basket{
+            background: $orange;
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            padding: 0;
+            transform: translate(-3px, 3px);
+
+        }
+
+}
+
+
 
 
 

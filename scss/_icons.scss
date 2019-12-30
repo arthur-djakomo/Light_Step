@@ -7,18 +7,14 @@
 
 
 %social__icons {
-    top: 40px;
-    z-index: 4;
     fill: $social-color;
     padding: 5px;
-    border: 2px solid $social-color;
     width: 30px;
     height: 30px;
+    border: 2px solid $social-color;
     border-radius: 50%;
-    margin-right: 10px;
     &:hover{
         fill: #fff;
-        background: blue;
         border: none;
         box-shadow: 0 0 5px 2px;
     }
@@ -34,6 +30,9 @@
 
 .facebook{
     @extend %social__icons;
+    &:hover{
+        background: blue;
+    }
 }
 .vkontakte{
     @extend %social__icons;
@@ -47,6 +46,19 @@
     &:hover{
         background: #e11588;
         box-shadow: 0 0 5px 2px #e11588;
+    }
+}
+
+.key{
+    @extend %social__icons;
+    &:hover{
+        background: blue;
+    }
+}
+.lock{
+    @extend %social__icons;
+    &:hover{
+        background: blue;
     }
 }
 
