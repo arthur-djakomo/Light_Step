@@ -1,6 +1,7 @@
 .nav{
     margin-top: 35px;
     display: flex;
+    align-items: flex-end;
 
 }
 .menu{
@@ -20,7 +21,7 @@
         }
          .menu__items{
              color: $black;
-             padding: 8.5px 57px;
+             padding: 8.5px 56.5px;
              display: inline-block;
              text-decoration: none;
              font-size: 14px;
@@ -34,7 +35,7 @@
 }
 
 
-
+.search__block{
 
         .search__line{
             height: 40px;
@@ -57,4 +58,4 @@
             transform: translate(-3px, 3px);
 
         }
-
+}

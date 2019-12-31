@@ -182,6 +182,7 @@ span + span {
 .nav {
   margin-top: 35px;
   display: flex;
+  align-items: flex-end;
 }
 
 .menu {
@@ -202,7 +203,7 @@ span + span {
 }
 .menu li .menu__items {
   color: #424242;
-  padding: 8.5px 57px;
+  padding: 8.5px 56.5px;
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
@@ -213,7 +214,7 @@ span + span {
   color: #fff;
 }
 
-.search__line {
+.search__block .search__line {
   height: 40px;
   width: 240px;
   background-color: white;
@@ -223,8 +224,7 @@ span + span {
   padding: 0;
   text-align: center;
 }
-
-.search__photo {
+.search__block .search__photo {
   background: #ff7e45;
   width: 40px;
   height: 40px;
@@ -235,8 +235,16 @@ span + span {
   transform: translate(-3px, 3px);
 }
 
-.slider__photo img {
-  width: 100%;
-  max-width: 1480px;
-  margin: 0 auto;
+.slider__items {
+  position: relative;
+  width: 1480px;
+  height: 500px;
+  overflow: hidden;
+}
+.slider__items .slider__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0);
 }

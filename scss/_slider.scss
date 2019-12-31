@@ -1,7 +1,15 @@
-.slider__photo{
-    img{
-        width: 100%;
-        max-width: 1480px;
-        margin: 0 auto;
+.slider__items{
+    position: relative;
+    width: 1480px;
+    height: 500px;
+    overflow: hidden;
+    .slider__photo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate3d(-50%, -50%, 0);
     }
 }
+
+
